@@ -9,6 +9,8 @@
     min-height: 1.5em;
     border-radius: 0.25em;
     position: relative;
+    font-family: sans-serif;
+    cursor: pointer;
 }
 
 
@@ -16,7 +18,7 @@
     border: none;
     outline: none;
     padding: 0;
-    margin: 0 ;
+    margin: 0;
     background-color: white;
     justify-self: end;
     font-size: 1.4em;
@@ -45,7 +47,7 @@
     z-index: 100;
 }
 
-.options.show{
+.options.show {
     display: block;
 }
 
@@ -56,33 +58,33 @@
 }
 
 .caret {
-    border: .25em solid transparent;
-    border-top: 0.5em solid #777;
+    border: .3em solid transparent;
+    border-top: 0.45em solid #888;
     cursor: pointer;
-    transform: translate(0.25%);
+    transform: translateY(25%);
 }
 
 .caret:hover {
     border-top-color: #333;
 }
 
-.option{
-    padding:0.35em 0.5em;
+.option {
+    padding: 0.35em 0.5em;
     cursor: pointer;
 }
 
-.option.selected{
+.option.selected {
     background-color: hsl(198, 95%, 59%);
 }
 
-.option.highlighted{
-    color:white;
+.option.highlighted {
+    color: white;
     background-color: hsl(209, 98%, 67%);
 }
 
-.options-btn{
+.options-btn {
     display: flex;
-    padding:0.3em;
+    padding: 0.3em;
     background: none;
     outline: none;
     border: 0.1em solid #777;
@@ -90,20 +92,21 @@
     font-size: 0.9em;
 }
 
-.option-close{
-    padding:0 0.3em;
-    color:#777;
+.option-close {
+    padding: 0 0.3em;
+    color: #777;
     cursor: pointer;
 }
 
 .option-close:hover,
-.option-close:focus{
-    color:rgb(98, 0, 0);
+.option-close:focus {
+    color: rgb(255, 1, 1);
+    transform: scale(140%);
 }
 
 .value {
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
-    gap:0.2em;
+    gap: 0.2em;
 }
