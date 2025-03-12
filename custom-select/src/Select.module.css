@@ -1,0 +1,109 @@
+.container {
+    padding: 1em;
+    border: 1px solid #777;
+    display: flex;
+    width: 20em;
+    align-items: center;
+    padding: 0.75em;
+    gap: .5em;
+    min-height: 1.5em;
+    border-radius: 0.25em;
+    position: relative;
+}
+
+
+.close-btn {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 ;
+    background-color: white;
+    justify-self: end;
+    font-size: 1.4em;
+    color: #777;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+
+.options {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 10em;
+    list-style: none;
+    top: calc(100% + .5em);
+    left: 0;
+    border: 0.05em solid #777;
+    background-color: white;
+    width: 100%;
+    border-radius: 0.25em;
+    display: none;
+    z-index: 100;
+}
+
+.options.show{
+    display: block;
+}
+
+.divider {
+    align-self: stretch;
+    width: 0.05em;
+    background-color: #777;
+}
+
+.caret {
+    border: .25em solid transparent;
+    border-top: 0.5em solid #777;
+    cursor: pointer;
+    transform: translate(0.25%);
+}
+
+.caret:hover {
+    border-top-color: #333;
+}
+
+.option{
+    padding:0.35em 0.5em;
+    cursor: pointer;
+}
+
+.option.selected{
+    background-color: hsl(198, 95%, 59%);
+}
+
+.option.highlighted{
+    color:white;
+    background-color: hsl(209, 98%, 67%);
+}
+
+.options-btn{
+    display: flex;
+    padding:0.3em;
+    background: none;
+    outline: none;
+    border: 0.1em solid #777;
+    border-radius: 0.25em;
+    font-size: 0.9em;
+}
+
+.option-close{
+    padding:0 0.3em;
+    color:#777;
+    cursor: pointer;
+}
+
+.option-close:hover,
+.option-close:focus{
+    color:rgb(98, 0, 0);
+}
+
+.value {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.2em;
+}
