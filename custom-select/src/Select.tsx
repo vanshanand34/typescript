@@ -106,7 +106,10 @@ export function Select({ multiple, value, options, onChange }: SelectProps) {
                         >{option.value}
                             <span
                                 className={`${styles["option-close"]}`}
-                                onClick={() => selectOption(option)}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    selectOption(option);
+                                }}
                             >&times;</span>
                         </button>
 
